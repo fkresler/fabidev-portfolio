@@ -12,7 +12,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
   const currentFullYear = new Date().getFullYear();
 
   return (
-    <div>
+    <>
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -44,11 +44,13 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
           </div>
         </nav>
       </header>
-      {children}
+      <main>
+        {children}
+      </main>
       <footer className={styles.footer}>
         © 2022-{currentFullYear} Fabian Kresler
       </footer>
-    </div>
+    </>
   );
 };
 
