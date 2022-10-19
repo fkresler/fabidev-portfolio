@@ -1,5 +1,14 @@
 .header {
   display: block;
-  margin: 3rem 0;
-  border: 1px solid red;
+  padding: 1.75rem 1.25rem;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      padding: 0 1rem;
+    }
+  }
 }
