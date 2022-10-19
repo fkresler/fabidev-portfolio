@@ -7,6 +7,26 @@
     align-items: center;
     justify-content: space-between;
 
+    .nav_large {
+      display: none;
+
+      @media only screen and (min-width: 600px) {
+        display: block;
+      }
+    }
+
+    .nav_small {
+      display: block;
+
+      @media only screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    .nav_small_popup {
+      display: none;
+    }
+
     a {
       padding: 0 1rem;
     }

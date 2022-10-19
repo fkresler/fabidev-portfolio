@@ -22,7 +22,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
             <a>Home</a>
           </Link>
         </div>
-        <div>
+        <div className={styles.nav_large}>
           <Link href="/about">
             <a>About</a>
           </Link>
@@ -32,6 +32,12 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
           <Link href="/api/users">
             <a>Users API</a>
           </Link>
+        </div>
+        <div className={styles.nav_small}>
+          Icon to open a layer
+        </div>
+        <div className={styles.nav_small_popup}>
+          Layered navigation markup
         </div>
       </nav>
     </header>
