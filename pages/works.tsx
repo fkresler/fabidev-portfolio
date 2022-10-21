@@ -1,8 +1,8 @@
 import Layout from '../components/Layout';
 
 const WorksPage = () => (
-  <Layout title="Works | Hi, I am Fabian">
-    <h1>These are some of the things I have done</h1>
+  <Layout title="Works">
+    <h1>Some of the stuff I have worked on</h1>
   </Layout>
 );
 

@@ -30,9 +30,6 @@ const Layout = ({ children, title = 'Portfolio' }: Props) => {
             <Link href="/works">
               <a>Works</a>
             </Link>
-            <Link href="/blog">
-              <a>Blog</a>
-            </Link>
             <Link href="/contact">
               <a>Contact</a>
             </Link>
