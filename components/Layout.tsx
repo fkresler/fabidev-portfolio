@@ -8,13 +8,14 @@ type Props = {
   title?: string
 }
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => {
+const Layout = ({ children, title = 'Portfolio' }: Props) => {
+  const fullTitle = `${title} | Fabian Kresler`;
   const currentFullYear = new Date().getFullYear();
 
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{fullTitle}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
@@ -26,14 +27,14 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
             </Link>
           </div>
           <div className={styles.nav_large}>
-            <Link href="/about">
-              <a>About</a>
+            <Link href="/works">
+              <a>Works</a>
             </Link>
-            <Link href="/users">
-              <a>Users List</a>
+            <Link href="/blog">
+              <a>Blog</a>
             </Link>
-            <Link href="/api/users">
-              <a>Users API</a>
+            <Link href="/contact">
+              <a>Contact</a>
             </Link>
           </div>
           <div className={styles.nav_small}>
