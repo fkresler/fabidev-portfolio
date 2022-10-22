@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import ContactForm from '../components/ContactForm';
 
 const IndexPage = () => (
   <Layout title="Home">
@@ -6,32 +7,35 @@ const IndexPage = () => (
     <section>
       <h2>About me</h2>
       <p>
-        Inventore est odio cumque consequatur culpa odit. Eum neque qui dolorum. Ut quas debitis laudantium consequuntur molestiae similique. Sit aut itaque omnis praesentium commodi.
+        Hey I am Fabian. I am primarily a frontend developer with experience in backend development, API design and UX/UI as well. I believe digital experiences can improve and help the life of people and make the world a better place.
       </p>
     </section>
     <section>
       <h2>Experiences & education</h2>
-      <p>
-        Aut autem vitae aperiam. Omnis alias expedita beatae voluptas eligendi laborum id qui. Nam enim labore perspiciatis omnis officia commodi quis.
-      </p>
+      <ul>
+        <li>University Coburg: Bachelor of applied Sciences</li>
+        <li>empiriecom GmbH & Co. KG: Frontend developer</li>
+      </ul>
     </section>
     <section>
       <h2>Services</h2>
-      <p>
-        Est cupiditate et inventore assumenda quidem ipsa. Eum nihil esse vel fugiat. Natus consequuntur quibusdam explicabo voluptatem sunt. Est et earum reiciendis a sit autem veritatis saepe.
-      </p>
+      <ul>
+        <li>Web development</li>
+        <li>API design</li>
+        <li>UX/UI</li>
+      </ul>
     </section>
     <section>
       <h2>Recent works</h2>
-      <p>
-        Totam ab ipsum quisquam ullam expedita nisi. Ad consectetur quidem ab nihil sint quos animi velit.
-      </p>
+      <ul>
+        <li>MyFavoriteLeague</li>
+        <li>Destiny Todos</li>
+        <li>Discord raid organizer bot</li>
+      </ul>
     </section>
     <section>
       <h2>Get in touch</h2>
-      <p>
-        Maiores ut necessitatibus corporis nesciunt perspiciatis officiis. Sunt suscipit quisquam repellat et molestiae exercitationem. Velit est ut quia delectus rerum.
-      </p>
+      <ContactForm />
     </section>
   </Layout>
 );
