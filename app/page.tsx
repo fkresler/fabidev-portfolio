@@ -1,8 +1,7 @@
-import Layout from '../components/Layout';
 import ContactForm from '../components/ContactForm';
 
-const IndexPage = () => (
-  <Layout title="Home">
+const IndexPage = async () => (
+  <>
     <h1>Hi I am Fabian Kresler</h1>
     <section>
       <h2>About me</h2>
@@ -35,9 +34,8 @@ const IndexPage = () => (
     </section>
     <section>
       <h2>Get in touch</h2>
-      <ContactForm />
     </section>
-  </Layout>
+  </>
 );
 
 export default IndexPage;
