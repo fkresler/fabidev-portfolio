@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Link from 'next/link';
-import styles from './RootLayout.module.scss';
+import styles from './Layout.module.scss';
 
 type Props = {
   children?: ReactNode
