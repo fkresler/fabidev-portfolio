@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import '../styles/reset.css';
-import LayoutComponent from '../components/Layout';
+import RootLayout from './RootLayout';
 
 type Props = {
   children?: ReactNode
@@ -10,9 +10,9 @@ const Layout = ({ children }: Props) => {
   return (
     <html lang="en">
       <body>
-        <LayoutComponent>
+        <RootLayout>
           {children}
-        </LayoutComponent>
+        </RootLayout>
       </body>
     </html>
   );
