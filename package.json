@@ -4,8 +4,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "type-check": "tsc"
+    "lint": "prettier --check . && next lint",
+    "lint-fix": "prettier --write . & next lint --fix",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "next": "^13.0.1",
