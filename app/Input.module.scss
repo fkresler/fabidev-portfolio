@@ -7,9 +7,9 @@
   padding: 1rem 1.5rem;
   border-radius: 2rem;
   border: 0;
-  outline: 2px solid lightslategrey;
+  outline: 2px solid var(--color-gray-400);
 
   &:focus {
-    outline: 2px solid lightcoral;
+    outline: 2px solid var(--color-secondary);
   }
 }
