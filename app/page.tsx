@@ -6,7 +6,9 @@ const IndexPage = async () => (
     <section>
       <h2>About me</h2>
       <p>
-        Hey I am Fabian. I am primarily a frontend developer with experience in backend development, API design and UX/UI as well. I believe digital experiences can improve and help the life of people and make the world a better place.
+        Hey I am Fabian. I am primarily a frontend developer with experience in backend development, API design and
+        UX/UI as well. I believe digital experiences can improve and help the life of people and make the world a better
+        place.
       </p>
     </section>
     <section>
