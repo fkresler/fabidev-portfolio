@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Input, Textarea } from './Input';
 import styles from './ContactForm.module.scss';
