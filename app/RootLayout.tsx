@@ -4,7 +4,6 @@ import styles from './RootLayout.module.scss';
 
 type Props = {
   children?: ReactNode
-  title?: string
 }
 
 const Layout = ({ children }: Props) => {
