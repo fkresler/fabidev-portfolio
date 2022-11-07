@@ -1,4 +1,4 @@
-import ContactForm from '../components/ContactForm';
+import ContactForm from './ContactForm';
 
 const IndexPage = async () => (
   <>
@@ -34,6 +34,7 @@ const IndexPage = async () => (
     </section>
     <section>
       <h2>Get in touch</h2>
+      <ContactForm />
     </section>
   </>
 );
