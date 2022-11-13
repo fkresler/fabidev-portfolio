@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Input, Textarea } from './Input';
+import Button from './Button';
 import styles from './ContactForm.module.scss';
 
 const ContactForm = () => {
@@ -36,7 +37,9 @@ const ContactForm = () => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <button type="submit">Send</button>
+      <Button type="submit" style="primary" isFullWidth>
+        Send
+      </Button>
     </form>
   );
 };
