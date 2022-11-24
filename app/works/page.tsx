@@ -1,16 +1,23 @@
 import Container from '../Container';
+import Typography from '../Typography';
 
 const WorksPage = async () => (
   <>
-    <Container>
-      <h1>Some of the stuff I have worked on</h1>
+    <Container element="section">
+      <Typography element="h1">Some of the stuff I have worked on</Typography>
     </Container>
-    <Container headline="Scroll around and find out">
+    <Container element="section">
+      <Typography element="h2">Scroll around and find out</Typography>
       <ul>
-        <li>Discord Raid Organizer Bot</li>
-        <li>MyFavoriteLeague</li>
-        <li>Legends of Runeterra Quizzing Game</li>
-        <li>Destiny Goal Organizer</li>
+        <li>
+          <Typography>Discord Raid Organizer Bot</Typography>
+        </li>
+        <li>
+          <Typography>MyFavoriteLeague</Typography>
+        </li>
+        <li>
+          <Typography>Destiny Goal Organizer</Typography>
+        </li>
       </ul>
     </Container>
   </>

@@ -3,6 +3,7 @@ import '../styles/reset.css';
 import '../styles/variables.css';
 import styles from './layout.module.scss';
 import Link from './Link';
+import Typography from './Typography';
 
 type Props = {
   children?: ReactNode;
@@ -28,7 +29,9 @@ const Layout = ({ children }: Props) => {
           </nav>
         </header>
         <main>{children}</main>
-        <footer className={styles.footer}>© 2022-{currentFullYear} Fabian Kresler</footer>
+        <footer className={styles.footer}>
+          <Typography>© 2022-{currentFullYear} Fabian Kresler</Typography>
+        </footer>
       </body>
     </html>
   );

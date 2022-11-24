@@ -3,16 +3,15 @@ import styles from './Container.module.scss';
 
 type ContainerProps = {
   id?: string;
-  headline?: string;
   contentSize?: 'sm' | 'default';
+  element?: 'div' | 'section';
   children: React.ReactNode;
 };
 
-const Container = ({ id, headline, children, contentSize = 'default' }: ContainerProps) => (
-  <section id={id} className={styles.section}>
-    {headline && <h2 className={styles.headline}>{headline}</h2>}
+const Container = ({ id, contentSize = 'default', element: Element = 'div', children }: ContainerProps) => (
+  <Element id={id} className={styles.container}>
     <div className={styles[contentSize]}>{children}</div>
-  </section>
+  </Element>
 );
 
 export default Container;
