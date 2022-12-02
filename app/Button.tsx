@@ -7,11 +7,16 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const Button = ({ children, isFullWidth = false, style = 'primary', ...rest }: ButtonProps) => {
-  const widthClassName: string = isFullWidth ? styles.fullWidth : '';
+  const incomingClassName = rest.className;
   const styleClassName: string = styles[style] || styles.primary;
 
+  const classNameArray = [styles.button, styleClassName]
+    .concat(incomingClassName ? [incomingClassName] : [])
+    .concat(isFullWidth ? [styles.fullWidth] : []);
+  const classNames = classNameArray.join(' ');
+
   return (
-    <button {...rest} className={`${styles.button} ${widthClassName} ${styleClassName}`}>
+    <button {...rest} className={classNames}>
       {children}
     </button>
   );
