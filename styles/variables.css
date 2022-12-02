@@ -33,4 +33,6 @@
   --font-weight-medium: 500;
   --font-weight-light: 400;
   --font-family: Arial, Helvetica, sans-serif;
+
+  --default-padding: 2rem 10%;
 }

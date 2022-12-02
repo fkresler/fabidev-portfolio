@@ -99,7 +99,7 @@ const IndexPage = async () => (
         ]}
       />
     </Container>
-    <Container element="section" contentSize="sm">
+    <Container element="section">
       <Typography element="h2">Get in touch</Typography>
       <ContactForm />
     </Container>
