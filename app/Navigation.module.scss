@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+
+  .nav_large {
+    display: none;
+
+    @media only screen and (min-width: 600px) {
+      display: block;
+    }
+  }
+
+  .nav_small {
+    display: block;
+
+    @media only screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+}
+
+.popup_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: var(--default-padding);
+}
